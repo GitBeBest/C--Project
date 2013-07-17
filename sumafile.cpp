@@ -22,8 +22,9 @@ int main()
   double sum = 0.0;
   int count = 0;
   inFile>>value;
-  while(inFile.good)
+  while(inFile.good())
     {
+	cout<<value<<endl;
       ++count;
       sum += value;
       inFile>>value;
